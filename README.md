@@ -3,7 +3,7 @@ sillycat-analyzer-java
 
 Analyzer the @username, URL and {smile}, {sad} ... emoticons.
 
-Three types of contents from URL
+Three types of contents from string
 
 1. username  (maybe have a dictionary in DB, large number of usernames)
 
