@@ -12,10 +12,11 @@
   <packaging>jar</packaging>
   
   <properties>
-  	<hadoop.version>1.0</hadoop.version>
+  	<springframework.version>3.1.1.RELEASE</springframework.version>
   </properties>
   
   <dependencies>
+  	<!--  logging -->
     <dependency>
       	<groupId>commons-logging</groupId>
       	<artifactId>commons-logging</artifactId>
@@ -26,6 +27,25 @@
 		<artifactId>log4j</artifactId>
 		<version>1.2.17</version>
     </dependency>
+    <!-- springframework -->
+    <dependency>
+		<groupId>org.springframework</groupId>
+		<artifactId>spring-context</artifactId>
+		<version>${springframework.version}</version>
+	</dependency>
+	<!--  testing  -->
+	<dependency>
+		<groupId>org.springframework</groupId>
+		<artifactId>spring-test</artifactId>
+		<version>${springframework.version}</version>
+		<scope>test</scope>
+	</dependency>
+    <dependency>
+		<groupId>junit</groupId>
+		<artifactId>junit</artifactId>
+		<version>4.10</version>
+		<scope>test</scope>
+	</dependency>
   </dependencies>
 
   <build>
