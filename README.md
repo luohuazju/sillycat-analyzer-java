@@ -15,7 +15,7 @@ Three types of contents from string
 
 Short Term Plan
 
-Just provide a module to parse this function, requirement is clear here.
+Just provide a module to parse the string and fetch the title of URL, requirements are clear here.
 
 1. Setup up Java MAVEN Spring environment to do this
 
