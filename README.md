@@ -27,13 +27,15 @@ Just provide a module to parse the string and fetch the title of URL, requiremen
 
 5. Try jsoup to fetch the URL title
 
-6. Enable Guava Cache to avoid fetch same URL
+6. Try jackson to the JSON mapping
 
-7. Almost functionally working, perf testing to get a baseline.
+7. Enable Guava Cache to avoid fetch same URL
 
-7. (Optional) Try 3 separate Regex patterns to parse the string separately, Perf testing if we get better performance
+8. Almost functionally working, perf testing to get a baseline.
 
-8. (Optional) Try DFA(Deterministic Finite Automaton) to get the emoticons, Perf testing if we get better performance
+9. (Optional) Try 3 separate Regex patterns to parse the string separately, Perf testing if we get better performance
+
+10. (Optional) Try DFA(Deterministic Finite Automaton) to get the emoticons, Perf testing if we get better performance
 
 
 Long Term Plan
