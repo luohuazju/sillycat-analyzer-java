@@ -48,7 +48,7 @@ public class JSONMapperHeroTest extends BaseTest{
      *    "links": [
      *       {
      *         "url": "http://www.nbcolympics.com",
-     *         "title": "NBC Olympics | 2014 NBC Olympics in Sochi Russia"
+     *         "title": "NBC Olympics | Home of the 2016 Olympic Games in..."
      *       }
      *    ]
      * }
@@ -70,7 +70,7 @@ public class JSONMapperHeroTest extends BaseTest{
      *   "links": [
      *     {
      *       "url": "https://twitter.com/jdorfman/status/430511497475670016",
-     *       "title": "Twitter / jdorfman: nice @littlebigdetail from ..."
+     *       "title": "Justin Dorfman on Twitter: "nice @littlebigdetai..."
      *     }
      *   ]
      * }

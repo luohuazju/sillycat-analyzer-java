@@ -1,16 +1,12 @@
 package com.sillycat.analyzerjava.service;
 
-import java.util.Arrays;
-
 import junit.framework.Assert;
 
-import org.codehaus.jackson.map.ObjectMapper;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 
 import com.sillycat.analyzerjava.base.BaseTest;
-import com.sillycat.analyzerjava.model.ContentLabel;
 
 
 public class AnalyzerHeroTest extends BaseTest{
@@ -30,7 +26,7 @@ public class AnalyzerHeroTest extends BaseTest{
 	 */
 	@Test
 	public void mentionsOnly(){
-		Assert.assertEquals(jsonstring_mentions, analyzerHero.analyzerAll("@chris you around?"));
+		Assert.assertEquals(jsonstring_mentions, analyzerHero.analyzerAll(rawstring_mentions));
 	}
 	
 	/**
@@ -45,8 +41,7 @@ public class AnalyzerHeroTest extends BaseTest{
 	 */
 	@Test
 	public void emoticonsOnly(){
-		//TODO
-		Assert.assertTrue(true);
+		Assert.assertEquals(jsonstring_emoticons, analyzerHero.analyzerAll(rawstring_emoticons));
 	}
 	
 	/**
@@ -56,15 +51,14 @@ public class AnalyzerHeroTest extends BaseTest{
      *    "links": [
      *       {
      *         "url": "http://www.nbcolympics.com",
-     *         "title": "NBC Olympics | Home of the 2016 Olympic Games in Rio"
+     *         "title": "NBC Olympics | Home of the 2016 Olympic Games in..."
      *       }
      *    ]
      * }
 	 */
 	@Test
 	public void urlsOnly(){
-		//TODO
-		Assert.assertTrue(true);
+		Assert.assertEquals(jsonstring_links, analyzerHero.analyzerAll(rawstring_links));
 	}
 
 	/**
@@ -81,15 +75,14 @@ public class AnalyzerHeroTest extends BaseTest{
      *   "links": [
      *     {
      *       "url": "https://twitter.com/jdorfman/status/430511497475670016",
-     *       "title": "Twitter / jdorfman: nice @littlebigdetail from ..."
+     *       "title": "Justin Dorfman on Twitter: "nice @littlebigdetai..."
      *     }
      *   ]
      * }
 	 */
 	@Test
 	public void all(){
-		//TODO
-		Assert.assertTrue(true);
+		Assert.assertEquals(jsonstring_all, analyzerHero.analyzerAll(rawstring_all));
 	}
 	
 }
