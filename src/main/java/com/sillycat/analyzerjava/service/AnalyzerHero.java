@@ -1,4 +1,4 @@
-package com.sillycat.analyzerjava;
+package com.sillycat.analyzerjava.service;
 
 /**
  * Analyze the string based on certain pattern to required JSON content

@@ -1,4 +1,4 @@
-package com.sillycat.analyzerjava;
+package com.sillycat.analyzerjava.service;
 
 /**
  * Just a simple class to fetch the Title from URL

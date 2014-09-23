@@ -1,17 +1,19 @@
-package com.sillycat.analyzerjava;
+package com.sillycat.analyzerjava.service;
+
+import java.util.Arrays;
 
 import junit.framework.Assert;
 
+import org.codehaus.jackson.map.ObjectMapper;
 import org.junit.Test;
-import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.test.context.ContextConfiguration;
-import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
-@RunWith(SpringJUnit4ClassRunner.class)  
-@ContextConfiguration(locations = {"file:src/test/resources/test-context.xml" }) 
-public class AnalyzerHeroTest {
+import com.sillycat.analyzerjava.base.BaseTest;
+import com.sillycat.analyzerjava.model.ContentLabel;
+
+
+public class AnalyzerHeroTest extends BaseTest{
 
 	@Autowired  
     @Qualifier("analyzerHero")  
@@ -28,8 +30,7 @@ public class AnalyzerHeroTest {
 	 */
 	@Test
 	public void mentionsOnly(){
-		//TODO
-		Assert.assertTrue(true);
+		Assert.assertEquals(jsonstring_mentions, analyzerHero.analyzerAll("@chris you around?"));
 	}
 	
 	/**
@@ -55,7 +56,7 @@ public class AnalyzerHeroTest {
      *    "links": [
      *       {
      *         "url": "http://www.nbcolympics.com",
-     *         "title": "NBC Olympics | 2014 NBC Olympics in Sochi Russia"
+     *         "title": "NBC Olympics | Home of the 2016 Olympic Games in Rio"
      *       }
      *    ]
      * }

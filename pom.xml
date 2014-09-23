@@ -13,6 +13,7 @@
   
   <properties>
   	<springframework.version>3.1.1.RELEASE</springframework.version>
+  	<jackson.version>1.9.10</jackson.version>
   </properties>
   
   <dependencies>
@@ -32,6 +33,23 @@
 		<groupId>org.springframework</groupId>
 		<artifactId>spring-context</artifactId>
 		<version>${springframework.version}</version>
+	</dependency>
+	<!-- json -->
+	<dependency>
+		<groupId>org.codehaus.jackson</groupId>
+		<artifactId>jackson-core-asl</artifactId>
+		<version>${jackson.version}</version>
+	</dependency>
+	<dependency>
+		<groupId>org.codehaus.jackson</groupId>
+		<artifactId>jackson-mapper-asl</artifactId>
+		<version>${jackson.version}</version>
+	</dependency>
+	<!-- jsoup HTML parser library @ http://jsoup.org/ -->
+	<dependency>
+  		<groupId>org.jsoup</groupId>
+  		<artifactId>jsoup</artifactId>
+  		<version>1.7.3</version>
 	</dependency>
 	<!--  testing  -->
 	<dependency>

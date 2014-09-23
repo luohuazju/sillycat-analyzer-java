@@ -15,9 +15,11 @@
 			">
 			
     <!--  my lovely spring, long time no see  -->
-	<bean id="analyzerHero" class="com.sillycat.analyzerjava.impl.AnalyzerHeroSingleRegexImpl" />
+	<bean id="analyzerHero" class="com.sillycat.analyzerjava.service.impl.AnalyzerHeroSingleRegexImpl" init-method="init"/>
 
-	<bean id="resourceFetchHero" class="com.sillycat.analyzerjava.impl.ResourceFetchHeroJsoupImpl" />
+	<bean id="resourceFetchHero" class="com.sillycat.analyzerjava.service.impl.ResourceFetchHeroJsoupImpl" />
+
+	<bean id="jsonMapperHero" class="com.sillycat.analyzerjava.service.impl.JSONMapperHeroJacksonImpl" init-method="init"/>
 
 </beans>
 
