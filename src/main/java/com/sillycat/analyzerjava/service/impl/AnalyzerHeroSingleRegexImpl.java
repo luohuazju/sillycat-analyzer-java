@@ -46,7 +46,7 @@ public class AnalyzerHeroSingleRegexImpl extends BaseHero implements
 				mentions.add(matcher.group("name"));
 			}
 			if(matcher.group("url") != null){
-				links.add(new LinkLabel(matcher.group("url"),""));
+				links.add(new LinkLabel(matcher.group("url"),resourceFetchHero.getTitlefromURL(matcher.group("url"))));
 			}
 			if(matcher.group("em") != null){
 				emoticons.add(matcher.group("em"));
@@ -58,9 +58,6 @@ public class AnalyzerHeroSingleRegexImpl extends BaseHero implements
 				contentLabel.setMentions(mentions);
 			}
 			if(!links.isEmpty()){
-				for(int i = 0;i<links.size();i++){
-					links.get(i).setTitle(resourceFetchHero.getTitlefromURL(links.get(i).getUrl()));
-				}
 				contentLabel.setLinks(links);
 			}
 			if(!emoticons.isEmpty()){
