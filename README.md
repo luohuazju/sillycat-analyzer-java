@@ -2,22 +2,30 @@ sillycat-analyzer-java
 ======================
 
 Analyzer the @username, URL and {smile}, {sad} ... emoticons.
+
 Three types of contents from string
+
 1. username  (maybe have a dictionary in DB, large number of usernames)
+
 2. emoticons (a dictionary in DB, small number of emoticons)
+
 3. URL       (can be any string following URL pattern)
 
 Required
 ======================
 JDK1.7+
+
 MAVEN 3.2+
 
 How to Run
 ======================
+
 Run all the tests
+
 >mvn clean test
 
 Make the assembly Package
+
 >mvn clean package
 
 Run the Perf test
