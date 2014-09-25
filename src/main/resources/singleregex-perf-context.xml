@@ -31,12 +31,7 @@
 	</context:component-scan>
 	
 	<!--  my lovely spring, long time no see  -->
-	<!-- 
 	<bean id="analyzerHero" class="com.sillycat.analyzerjava.service.impl.AnalyzerHeroSingleRegexImpl" init-method="init"/>
-	<bean id="analyzerHero" class="com.sillycat.analyzerjava.service.impl.AnalyzerHeroSeparateRegexImpl" init-method="init"/>
-	<bean id="analyzerHero" class="com.sillycat.analyzerjava.service.impl.AnalyzerHeroDFAImpl" init-method="init"/>
-	 -->
-	<bean id="analyzerHero" class="com.sillycat.analyzerjava.service.impl.AnalyzerHeroDFAImpl" init-method="init"/>
 
 	<bean id="resourceFetchHero" class="com.sillycat.analyzerjava.service.impl.ResourceFetchHeroJsoupImpl" />
 

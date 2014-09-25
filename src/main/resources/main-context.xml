@@ -30,8 +30,19 @@
 		<context:component-scan base-package="com.sillycat">
 	</context:component-scan>
 
-	<import resource="classpath:beans-context.xml" />
+	<!--  my lovely spring, long time no see  -->
+	<!-- 
+	<bean id="analyzerHero" class="com.sillycat.analyzerjava.service.impl.AnalyzerHeroSingleRegexImpl" init-method="init"/>
+	<bean id="analyzerHero" class="com.sillycat.analyzerjava.service.impl.AnalyzerHeroSeparateRegexImpl" init-method="init"/>
+	<bean id="analyzerHero" class="com.sillycat.analyzerjava.service.impl.AnalyzerHeroDFAImpl" init-method="init"/>
+	 -->
+	<bean id="analyzerHero" class="com.sillycat.analyzerjava.service.impl.AnalyzerHeroDFAImpl" init-method="init"/>
 
+	<bean id="resourceFetchHero" class="com.sillycat.analyzerjava.service.impl.ResourceFetchHeroJsoupImpl" />
+
+	<bean id="jsonMapperHero" class="com.sillycat.analyzerjava.service.impl.JSONMapperHeroJacksonImpl" init-method="init"/>
+
+	<bean id="cacheHero" class="com.sillycat.analyzerjava.service.impl.CacheHeroGuavaImpl" init-method="init"/>
 </beans>
 
 
