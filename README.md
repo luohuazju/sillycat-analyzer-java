@@ -68,7 +68,7 @@ First Analyzer Hero Test Done in 529 ms
 
 ===========================================
 
-So I do not see any big performance changes based on the cases right now.
+So I do not see any big performance changes based on the cases right now. With title cached somewhere based on the URL, we can parse the string on average in about 0.009 ms, that is not bad.
 
 Short Term Plan
 ======================
