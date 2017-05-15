@@ -11,17 +11,17 @@ import com.sillycat.analyzerjava.perf.SingleRegexAnalyzerBenchmark;
 public class ExecutorApp {
 
 	public static void main(String[] args) throws SolrServerException, IOException {
-//		/*
-//		 * Regex may not match all the requirement in the future
-//		 */
-//		SingleRegexAnalyzerBenchmark.main(args);
-//		SeparateRegexAnalyzerBenchmark.main(args);
-//		
-//		/**
-//		 * DFA, put all the keyword in the dictionary
-//		 */
-//		DFAAnalyzerBenchmark.main(args);
-		SolrMainApp.main(args);
+		/*
+		 * Regex may not match all the requirement in the future
+		 */
+		SingleRegexAnalyzerBenchmark.main(args);
+		SeparateRegexAnalyzerBenchmark.main(args);
+		
+		/**
+		 * DFA, put all the keyword in the dictionary
+		 */
+		DFAAnalyzerBenchmark.main(args);
+		//SolrMainApp.main(args);
 	}
 
 }
