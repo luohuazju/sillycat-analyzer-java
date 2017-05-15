@@ -32,6 +32,9 @@ Run the Perf test
 
 >java -jar target/analyzerjava-1.0-jar-with-dependencies.jar
 
+>java -javaagent:./jvm/tprofiler-1.0.1.jar -Dprofile.properties=./jvm/profile.properties -jar target/analyzerjava-1.0-jar-with-dependencies.jar
+
+
 ==========================================
 
 Single Regex Perf
